@@ -1,0 +1,95 @@
+---
+title: "Example template 2"
+bodyClass: bg-slate-50
+---
+
+<x-main>
+  <div class="bg-slate-50 sm:px-4 font-sans">
+    <table align="center">
+      <tr>
+        <td class="w-[552px] max-w-full">
+          <div mc:edit class="my-12 sm:my-8 text-center">
+            <a href="https://maizzle.com">
+              <if condition="page.env === 'local'">
+                <img src="/images/insignia.png" width="70" alt="Maizzle">
+              </if>
+              <else>
+                <img src="insignia.png" width="70" alt="Maizzle">
+              </else>
+            </a>
+          </div>
+
+          <table class="w-full">
+            <tr>
+              <td class="p-12 sm:px-6 text-base text-slate-700 bg-white rounded shadow-sm">
+                <h1 mc:edit class="m-0 mb-6 text-2xl sm:leading-8 text-black font-semibold">
+                  Hello,
+                </h1>
+
+                <p mc:edit class="m-0 mb-4 leading-6">
+                  For this week's inspiration, lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex deserunt, placeat, suscipit sapiente non minus necessitatibus vero hic sed natus amet ea repellat voluptate quam accusantium.
+                  <br><br>
+                  Eligendi quibusdam libero:
+                </p>
+
+                <div mc:edit class="mb-4">
+                  <img src="unsplash-fDSqEWLRNFE.jpg" width="456" alt="Brown textile photo" class="rounded">
+                </div>
+
+                <p mc:edit class="m-0 mb-4 leading-6">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ex deserunt, placeat, suscipit sapiente non minus necessitatibus vero hic sed natus amet ea repellat voluptate quam accusantium, eligendi quibusdam libero.
+                </p>
+
+                <div mc:edit class="mb-4">
+                  <img src="unsplash-AQ9-jKmebjM.jpg" width="456" alt="an aerial view of a large body of water" class="rounded">
+                </div>
+
+                <p mc:edit class="m-0 mb-4 leading-6">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ex deserunt, placeat, suscipit sapiente non minus necessitatibus vero hic sed natus amet ea repellat voluptate quam accusantium, eligendi quibusdam libero.
+                </p>
+
+                <div mc:edit class="mb-4">
+                  <img src="unsplash-HcX4g7ccucA.jpg" width="456" alt="painting of sea wave" class="rounded">
+                </div>
+
+                <p mc:edit class="m-0 mb-4 leading-6">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ex deserunt, placeat, suscipit sapiente non minus necessitatibus vero hic sed natus amet ea repellat voluptate quam accusantium, eligendi quibusdam libero.
+                </p>
+
+                <x-divider space-y="32px" class="bg-slate-200" />
+
+                <p mc:edit class="m-0 italic">
+                  Until next time,
+                  <br>
+                  The Maizzle Team
+                </p>
+              </td>
+            </tr>
+            <tr role="separator">
+              <td class="leading-12">&zwj;</td>
+            </tr>
+            <tr>
+              <td class="text-center text-slate-600 text-xs px-6">
+                <p mc:edit class="m-0 mb-4 uppercase">
+                  Powered by Maizzle
+                </p>
+
+                <p mc:edit class="m-0 italic">
+                  Quickly build HTML emails with Tailwind CSS
+                </p>
+
+                <p mc:edit class="cursor-default">
+                  <a href="https://maizzle.com/docs/" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Docs</a>
+                  &bull;
+                  <a href="https://github.com/maizzle" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Github</a>
+                  &bull;
+                  <a href="https://twitter.com/maizzlejs" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Twitter</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</x-main>
